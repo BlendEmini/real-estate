@@ -4,9 +4,11 @@ import Signup from "./routes/Signup";
 import Signin from "./routes/Signin";
 import About from "./routes/About";
 import Profile from "./routes/Profile";
+import Header from "./components/Header";
 function App() {
     return (
         <BrowserRouter>
+            <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/signup" element={<Signup />} />
